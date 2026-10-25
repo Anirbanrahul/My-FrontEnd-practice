@@ -1,0 +1,43 @@
+.switch {
+  position: relative;
+  width: 309px;
+}
+
+.switch input {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 40px;
+  background-color: rgb(202, 93, 93);
+  width: 20%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.switch .slider::before {
+    content: '';
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    background-color: #ffff;
+    width: 40%;
+    height: 100%;
+    border-radius: 100px;
+    transition: all 0.5s ease;
+}
+
+.switch :has(input:checked) .slider {
+    background-color: white;
+    transition: all 0.5s ease;
+}
+
+.switch :has(input:checked) .slider::before {
+    background-color: green;
+    left: calc(100% - 40%);
+}

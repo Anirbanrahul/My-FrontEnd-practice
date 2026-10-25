@@ -1,0 +1,38 @@
+.pagination-container {
+    display: flex;
+    cursor: pointer;
+  }
+  
+  .pagingBox {
+    max-width: 14px;
+    border: 1px solid black;
+    padding: 3px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .pagingBox.active {
+    background-color: rgb(11, 11, 11);
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .product-item {
+    border: 1px solid white;
+    width: 155px;
+    height: 155px;
+    margin: 5px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .productsimg {
+    width: 85px;
+    height: 70px;
+  }
+  
